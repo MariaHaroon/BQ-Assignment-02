@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 /* header */
@@ -76,7 +75,7 @@
     color: white;
     font-size: 50px;
     padding-top: 90px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
     align-items: center;
     padding-left: 30px;
 }
@@ -92,7 +91,7 @@
     transition: background 0.5s;
     cursor: pointer;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
 
 
 }
@@ -154,21 +153,7 @@ button:hover {
 
 }
 
-/* offers */
-.categories {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    row-gap: 20px;
-    column-gap: 20px;
-    padding-right: 25px;
-    padding-left: 25px;
-}
-
-/* whats new */
+/* whats in menu */
 .menu {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -187,17 +172,6 @@ button:hover {
 }
 
 /* food items */
-.categories1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 10px;
-    column-gap: 10px;
-    text-align: center;
-}
-
-
-
 .p-item {
     padding: 20px 10px 30px 20px;
 
@@ -217,20 +191,6 @@ span {
     color: red;
 }
 
-.q-v-1 p {
-    text-align: center;
-    font-size: 30px;
-    padding-bottom: 10px;
-    padding-top: 100px;
-    padding-right: 20px;
-}
-
-.q-v-1 h4 {
-    text-align: center;
-    font-size: 15px;
-}
-
-
 /* map */
 iframe {
     padding: 20px 0;
@@ -238,8 +198,6 @@ iframe {
     width: 100%;
     
 }
-
-
 
 /* footer */
 .footer {
@@ -278,170 +236,3 @@ ul {
     text-align: center;
 }
 
-/* media query */
-
-@media (max-width: 700px) {
-
-    .nav .menu-btn i {
-        display: block;
-    }
-
-    #click:checked~.menu-btn i:before {
-        content: "X";
-    }
-
-    .nav ul {
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        background-color: rgb(56, 46, 146);
-        ;
-        height: 60vh;
-        width: 100%;
-        display: block;
-        text-align: center;
-        transition: 0.5s;
-    }
-
-    #click:checked~ul {
-        left: 0%;
-
-
-    }
-
-    .nav ul li {
-        margin: 40px 0;
-        display: block;
-    }
-
-    .nav ul li a {
-        font-size: 15px;
-    }
-
-}
-
-
-@media (max-width: 600px) {
-
-    .container {
-        display: block;
-        font-size: 15px;
-    }
-
-    
-    .btn1 {
-        font-size: 13px;
-        text-align: center;
-        margin-left: 60px;
-        
-    }
-
-    .menu {
-        text-align: center;
-    }
-
-
-    .q-v {
-        display: block;
-    }
-
-    .q-v-1 {
-        padding-bottom: 25px;
-
-    }
-
-    .categories {
-        display: block;
-        text-align: center;
-
-    }
-
-    .item {
-        padding-left: 60px;
-        padding-bottom: 20px;
-       
-
-    }
-
-    .categories1 {
-        display: block;
-        text-align: center;
-    }
-
-    .p-item {
-        padding: 50px 100px 50px 100px;
-        
-    }
-
-    
-    .col-2 {
-        display: block;
-
-    }
-
-    .item2 {
-
-        padding-left: 25px;
-        text-align: center;
-    }
-
-    .content {
-        font-size: 40px;
-        padding-left: 40px;
-    }
-
-    .footer {
-        text-align: center;
-    }
-
-}
-
-
-/* offers */
-
-@media (min-width: 600px) {
-    .categories {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media (min-width: 900px) {
-    .categories {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-
-}
-
-/* products */
-
-@media (min-width: 600px) {
-    .categories1 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media (min-width: 900px) {
-    .categories1 {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-/* footer */
-
-@media (max-width: 600px) {
-    .container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-@media (max-width: 900px) {
-    .container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-
-}
